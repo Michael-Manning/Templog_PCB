@@ -1,0 +1,30 @@
+Parts -------------
+
+sensor:
+SHT45
+
+controller:
+ESP32-S3-MINI-1
+
+eeprom:
+M24512-WMN6TP
+
+fuel guage:
+BQ27441
+
+charger:
+BQ24075
+
+battery:
+
+RTC:
+DS3231MZ
+
+-------------------
+
+
+Battery management reference:
+https://cdn.sparkfun.com/assets/learn_tutorials/5/3/0/sparkfun-battery-babysitter-v10-schematic.pdf
+
+esp32 raw e-ink driver example PCB:
+https://www.waveshare.com/wiki/E-Paper_ESP32_Driver_Board
