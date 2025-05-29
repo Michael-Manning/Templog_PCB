@@ -20,6 +20,14 @@ battery:
 RTC:
 DS3231MZ
 
+USB connector:
+GCT USB4105
+
+Power path selector:
+LM66200DRLR
+
+USB voltage regulator:
+TLV75533PDBVR
 -------------------
 
 
@@ -28,3 +36,6 @@ https://cdn.sparkfun.com/assets/learn_tutorials/5/3/0/sparkfun-battery-babysitte
 
 esp32 raw e-ink driver example PCB:
 https://www.waveshare.com/wiki/E-Paper_ESP32_Driver_Board
+
+todo:
+- verify battery connector polarity
