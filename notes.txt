@@ -28,6 +28,9 @@ LM66200DRLR
 
 USB voltage regulator:
 TLV75533PDBVR
+
+connector
+FPC-05F-24PH20
 -------------------
 
 
