@@ -7738,7 +7738,7 @@
 				)
 			)
 		)
-		(property "Value" "47uH"
+		(property "Value" "10uH"
 			(at 229.87 118.11 90)
 			(effects
 				(font
@@ -7746,7 +7746,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_6.3x6.3_H3"
+		(property "Footprint" "Inductor_SMD:L_Sunlord_SWPA4030S"
 			(at 229.87 120.65 0)
 			(effects
 				(font

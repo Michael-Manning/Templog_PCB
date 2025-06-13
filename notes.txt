@@ -34,6 +34,9 @@ FPC-05F-24PH20
 -------------------
 
 
+power inductor maybe?
+L_Sunlord_SWPA4030S
+
 Battery management reference:
 https://cdn.sparkfun.com/assets/learn_tutorials/5/3/0/sparkfun-battery-babysitter-v10-schematic.pdf
 
@@ -41,4 +44,24 @@ esp32 raw e-ink driver example PCB:
 https://www.waveshare.com/wiki/E-Paper_ESP32_Driver_Board
 
 todo:
+
 - verify battery connector polarity
+
+- double check charger and fuel guage schematic reference
+
+- ensure all i2c addresses are unique
+
+- add buttons
+
+- add touch points to break out boot/reset for esp32
+
+- add power switch, or soft power button solution
+
+- verify that powerpath is not turned off by sysoff when vin/usb is connected (data sheet seems to indicate it only disconnects the battery)
+
+- add voltage 5v to 3.3v voltage divider to allow esp32 to detect usb presence and indicate that the device is charging. (unless powerpath selector somehow indicates this)
+
+- validate that soft power switch ic pulses long enough for esp32 to boot up
+
+
+

@@ -3012,12 +3012,6 @@
 		(uuid "17b02d86-e1dc-4cd8-aea1-33f4d80f540e")
 	)
 	(junction
-		(at 250.19 106.68)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "22e58394-0c29-465a-b9ed-2dd28edf2346")
-	)
-	(junction
 		(at 60.96 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3094,6 +3088,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d83d169a-b512-4136-b023-f8e6b7ed974d")
+	)
+	(junction
+		(at 250.19 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dcb860a5-90cd-4d5a-82f5-791ac9e91241")
 	)
 	(junction
 		(at 90.17 132.08)
@@ -3361,6 +3361,16 @@
 	)
 	(wire
 		(pts
+			(xy 250.19 102.87) (xy 250.19 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21b5a522-15fe-41ff-9f51-845fb94e2df9")
+	)
+	(wire
+		(pts
 			(xy 200.66 100.33) (xy 200.66 118.11)
 		)
 		(stroke
@@ -3388,16 +3398,6 @@
 			(type default)
 		)
 		(uuid "25d457ab-3453-4ceb-b087-2f90bcd896a4")
-	)
-	(wire
-		(pts
-			(xy 250.19 102.87) (xy 250.19 106.68)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "28d8ca61-b579-455f-b7eb-c1b880e89ee1")
 	)
 	(wire
 		(pts
@@ -3741,16 +3741,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 106.68) (xy 250.19 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ee1006a-fc6c-47f5-8a0f-d16f8bbd72ed")
-	)
-	(wire
-		(pts
 			(xy 250.19 95.25) (xy 261.62 95.25)
 		)
 		(stroke
@@ -4081,6 +4071,16 @@
 	)
 	(wire
 		(pts
+			(xy 238.76 102.87) (xy 238.76 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c15d2db3-d0e5-4f4d-86f6-32ebfadbf3c3")
+	)
+	(wire
+		(pts
 			(xy 152.4 100.33) (xy 171.45 100.33)
 		)
 		(stroke
@@ -4118,6 +4118,16 @@
 			(type default)
 		)
 		(uuid "cd2ce46b-46ab-49d7-baaa-2620d95d4639")
+	)
+	(wire
+		(pts
+			(xy 227.33 102.87) (xy 227.33 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ceb0c107-0832-4c68-8f17-f398de0c6df0")
 	)
 	(wire
 		(pts
@@ -4211,7 +4221,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 118.11) (xy 215.9 106.68)
+			(xy 215.9 118.11) (xy 215.9 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4221,7 +4231,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 106.68) (xy 250.19 106.68)
+			(xy 215.9 107.95) (xy 250.19 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4930,6 +4940,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 238.76 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "23fc26f7-39fa-43bb-932a-73a17a2846fd")
+		(property "Reference" "#PWR033"
+			(at 238.76 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 238.76 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 238.76 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 238.76 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 238.76 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9d612355-6003-476c-b4dc-75eff8d0c2e6")
+		)
+		(instances
+			(project "templog_mainboard"
+				(path "/84b25dc3-cc11-42e1-888d-24c6d5a62713/d593db04-482a-483f-ba64-3cc83809d23e"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 123.19 33.02 0)
 		(unit 1)
@@ -5517,7 +5593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c12d2e1-aba4-4cce-a5dd-3e308db21dbd")
-		(property "Reference" "D1"
+		(property "Reference" "SSB43L1"
 			(at 209.55 100.3299 90)
 			(effects
 				(font
@@ -5535,7 +5611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_0201_0603Metric"
+		(property "Footprint" "Diode_SMD:D_SMB"
 			(at 207.01 101.6 0)
 			(effects
 				(font
@@ -5589,7 +5665,7 @@
 		(instances
 			(project ""
 				(path "/84b25dc3-cc11-42e1-888d-24c6d5a62713/d593db04-482a-483f-ba64-3cc83809d23e"
-					(reference "D1")
+					(reference "SSB43L1")
 					(unit 1)
 				)
 			)
@@ -6130,6 +6206,72 @@
 			(project "templog_mainboard"
 				(path "/84b25dc3-cc11-42e1-888d-24c6d5a62713/d593db04-482a-483f-ba64-3cc83809d23e"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 227.33 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7428fffd-666b-4fe7-9e80-f0d7d5b701da")
+		(property "Reference" "#PWR034"
+			(at 227.33 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 227.33 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 227.33 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 227.33 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 227.33 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "14474c4c-17e2-4ed2-9865-36bdd9781377")
+		)
+		(instances
+			(project "templog_mainboard"
+				(path "/84b25dc3-cc11-42e1-888d-24c6d5a62713/d593db04-482a-483f-ba64-3cc83809d23e"
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
@@ -6768,7 +6910,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_6.3x6.3_H3"
+		(property "Footprint" "Inductor_SMD:L_Sunlord_SWPA4030S"
 			(at 220.98 95.25 0)
 			(effects
 				(font
