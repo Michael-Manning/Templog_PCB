@@ -3431,6 +3431,16 @@
 	)
 	(wire
 		(pts
+			(xy 74.93 41.91) (xy 80.01 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c3f06f5-35be-4d3a-ae6e-ad1e305457a2")
+	)
+	(wire
+		(pts
 			(xy 120.65 60.96) (xy 121.92 60.96)
 		)
 		(stroke
@@ -3518,6 +3528,16 @@
 			(type default)
 		)
 		(uuid "416e23ac-d0dc-45f9-b134-f36c783cfd82")
+	)
+	(wire
+		(pts
+			(xy 111.76 116.84) (xy 114.3 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4297043f-8caf-46ea-a7c5-e3d60fb15d4c")
 	)
 	(wire
 		(pts
@@ -3818,6 +3838,16 @@
 			(type default)
 		)
 		(uuid "8f7f5b29-4d33-40cc-8e6f-5241efd55ff5")
+	)
+	(wire
+		(pts
+			(xy 111.76 109.22) (xy 111.76 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92bda5ee-8e81-4560-9ab2-770802bd7128")
 	)
 	(wire
 		(pts
@@ -4339,6 +4369,16 @@
 		)
 		(uuid "2cd41ca1-1120-44ec-b21d-1b5e97c2437d")
 	)
+	(label "V_battery"
+		(at 74.93 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2dcd6694-d6ce-4ba1-9e2f-64efb51027ff")
+	)
 	(label "powerpath_out"
 		(at 151.13 90.17 180)
 		(effects
@@ -4410,6 +4450,17 @@
 		)
 		(uuid "239612da-c314-438a-8a36-ad820d0c2904")
 	)
+	(hierarchical_label "+battery"
+		(shape output)
+		(at 80.01 41.91 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3a0e0788-0ab3-4283-947e-03f48ef1f3fc")
+	)
 	(hierarchical_label "ESP_SCL"
 		(shape output)
 		(at 115.57 44.45 180)
@@ -4442,6 +4493,17 @@
 			(justify left)
 		)
 		(uuid "9e2e6ad2-f6bb-4e4c-b67b-2070e8edc6c5")
+	)
+	(hierarchical_label "SYSOFF"
+		(shape input)
+		(at 111.76 109.22 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c38a7649-a818-4eaa-9592-a7048c30ce95")
 	)
 	(hierarchical_label "+3.3Vout"
 		(shape output)

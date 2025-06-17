@@ -62,6 +62,12 @@ todo:
 - add voltage 5v to 3.3v voltage divider to allow esp32 to detect usb presence and indicate that the device is charging. (unless powerpath selector somehow indicates this)
 I forget what the "charge" pin is for. Maybe that solves the problem?
 
+- determine which pins can be used to wake up esp32 from deep sleep. If using soft power switch IC, and if if interupt pulls low, verify that the esp32 can be woken up
+from a pin being pulled low, not high
+
+- might be worth searching a bit longer for an even better voltage regulator. Ideally one that has a higher current rating, better efficiency, but not in a BGA package
+
+- determine if button manager interrupt pin high voltage is above 3.3v
 
 
 
