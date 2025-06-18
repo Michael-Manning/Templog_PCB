@@ -51,13 +51,8 @@ todo:
 
 - ensure all i2c addresses are unique
 
-- add buttons
-
 - add touch points to break out boot/reset for esp32
 
-- add power switch, or soft power button solution
-
-- verify that powerpath is not turned off by sysoff when vin/usb is connected (data sheet seems to indicate it only disconnects the battery)
 
 - add voltage 5v to 3.3v voltage divider to allow esp32 to detect usb presence and indicate that the device is charging. (unless powerpath selector somehow indicates this)
 I forget what the "charge" pin is for. Maybe that solves the problem?
