@@ -64,5 +64,6 @@ from a pin being pulled low, not high
 
 - determine if button manager interrupt pin high voltage is above 3.3v
 
+ribbon cable connector must be placed in a specific spot determined by where the cable is attacted to the display and how the cable is shapped (it has an offset position at the end from where it is attatched to the display)
 
 
