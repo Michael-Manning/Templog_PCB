@@ -3090,12 +3090,6 @@
 		(uuid "8cf1afe2-f68c-4db8-86fb-b9c4315bc85b")
 	)
 	(junction
-		(at 139.7 161.29)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8d0bff87-b475-4c6c-9808-afc2f183dbab")
-	)
-	(junction
 		(at 104.14 39.37)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3547,16 +3541,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 172.72) (xy 139.7 175.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "366da57d-8889-4552-8ba8-d24d54f692c2")
-	)
-	(wire
-		(pts
 			(xy 57.15 86.36) (xy 57.15 76.2)
 		)
 		(stroke
@@ -3627,7 +3611,7 @@
 	)
 	(wire
 		(pts
-			(xy 133.35 161.29) (xy 139.7 161.29)
+			(xy 133.35 161.29) (xy 147.32 161.29)
 		)
 		(stroke
 			(width 0)
@@ -3784,26 +3768,6 @@
 			(type default)
 		)
 		(uuid "6e354a85-1576-4129-a47e-a011168e0be5")
-	)
-	(wire
-		(pts
-			(xy 139.7 161.29) (xy 139.7 165.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "70b5409b-99ab-4ded-be10-2ef7197b4c67")
-	)
-	(wire
-		(pts
-			(xy 139.7 161.29) (xy 147.32 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "711e8a0b-285b-48d5-8b41-e5f38ce462d3")
 	)
 	(wire
 		(pts
@@ -4554,16 +4518,6 @@
 			(justify left bottom)
 		)
 		(uuid "bf9dfb88-dd83-40a5-83b9-2ab1df452964")
-	)
-	(label "+3.3V"
-		(at 139.7 175.26 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "fbe1beff-6fc2-4b86-b398-146970cf0d1f")
 	)
 	(hierarchical_label "ESP_SDA"
 		(shape output)
@@ -7791,76 +7745,6 @@
 			(project "templog_mainboard"
 				(path "/84b25dc3-cc11-42e1-888d-24c6d5a62713/d593db04-482a-483f-ba64-3cc83809d23e"
 					(reference "C9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 139.7 168.91 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c11b8f9c-5ec1-4f7d-828a-b70ed09dc3fa")
-		(property "Reference" "R9"
-			(at 142.24 167.6399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 142.24 170.1799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
-			(at 140.716 169.164 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 139.7 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "32b58f8f-489d-4e1c-97ca-d826e30b3b58")
-		)
-		(pin "2"
-			(uuid "555d628d-786e-4c17-99d1-a4870022e8b3")
-		)
-		(instances
-			(project "templog_mainboard"
-				(path "/84b25dc3-cc11-42e1-888d-24c6d5a62713/d593db04-482a-483f-ba64-3cc83809d23e"
-					(reference "R9")
 					(unit 1)
 				)
 			)

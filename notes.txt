@@ -65,7 +65,17 @@ https://github.com/atomic14/esp32-s3-pinouts
 
 - double check charger and fuel guage schematic reference
 
-- validate how ext1 wakeup works on esp32 from deep sleep. Validate internal pullup can be used, and that it's value is 
-good enough for this design (I'm running out of board space for resistors)
+validate pin chosen for alarm gpio
 
-- make sure button manager kill pin is not connected to an ESP32 glitch pin
+SPI lines could use lower pins and free up space near the diodes.
+If I free up that space, switch 10uf capacitor to a larger package
+
+add voltage specifiers where needed on the display driver and regulator analog circuits
+
+add tolerance specifier to fuel gauge resister
+
+
+---------------------- Firmware TODO --------
+
+investigate use of rtc_gpio_isolate() to prevent current leakage due to pullups/pulldowns enabled by default
+within the ESP32 module

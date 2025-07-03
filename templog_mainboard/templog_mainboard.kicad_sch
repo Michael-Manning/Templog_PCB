@@ -4217,6 +4217,12 @@
 		(uuid "26d413de-be24-48e0-bb4f-08e9e9a8d020")
 	)
 	(junction
+		(at 181.61 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2a38db43-6fe5-451a-9068-9e498b618237")
+	)
+	(junction
 		(at 132.08 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4448,6 +4454,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 46.99) (xy 181.61 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d2d8b69-2985-4977-b3ba-cdb133855f58")
+	)
+	(wire
+		(pts
 			(xy 162.56 36.83) (xy 162.56 45.72)
 		)
 		(stroke
@@ -4528,6 +4544,16 @@
 	)
 	(wire
 		(pts
+			(xy 181.61 33.02) (xy 181.61 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "194fa3d4-f3c3-4076-bd88-5e9402e2f6a1")
+	)
+	(wire
+		(pts
 			(xy 133.35 115.57) (xy 132.08 115.57)
 		)
 		(stroke
@@ -4568,6 +4594,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 63.5) (xy 85.09 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "214dda38-2637-49d5-855a-11767e6fbb5c")
+	)
+	(wire
+		(pts
 			(xy 133.35 106.68) (xy 132.08 106.68)
 		)
 		(stroke
@@ -4575,6 +4611,16 @@
 			(type default)
 		)
 		(uuid "26096bf3-9f74-4d87-a333-df8acb90d810")
+	)
+	(wire
+		(pts
+			(xy 181.61 58.42) (xy 185.42 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "277bbb63-35fb-47a3-b098-35a1573e8a50")
 	)
 	(wire
 		(pts
@@ -5125,16 +5171,6 @@
 			(type default)
 		)
 		(uuid "7fc154b6-ca14-4559-916b-cea2397cbafa")
-	)
-	(wire
-		(pts
-			(xy 46.99 78.74) (xy 50.8 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8020f453-54ad-4c58-bc9e-d307e20c7b7a")
 	)
 	(wire
 		(pts
@@ -6167,7 +6203,7 @@
 		(uuid "5c75b5fe-4da8-4a03-a107-0a55c466e0ae")
 	)
 	(label "clock_alarm"
-		(at 181.61 58.42 0)
+		(at 185.42 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6237,12 +6273,12 @@
 		(uuid "8469413f-6c6e-4044-b973-010a3f243215")
 	)
 	(label "clock_alarm"
-		(at 46.99 78.74 180)
+		(at 85.09 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "84ab6407-1dd8-4115-aaa0-a83d9a007325")
 	)
@@ -7113,6 +7149,72 @@
 			(project "templog_mainboard"
 				(path "/84b25dc3-cc11-42e1-888d-24c6d5a62713"
 					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 181.61 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "14209f9d-86ab-4dad-8e78-624f86cacf5a")
+		(property "Reference" "#PWR054"
+			(at 181.61 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 181.61 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 181.61 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 181.61 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 181.61 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "37354bba-cbc9-4929-81e1-767f29b93e67")
+		)
+		(instances
+			(project "templog_mainboard"
+				(path "/84b25dc3-cc11-42e1-888d-24c6d5a62713"
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -9770,7 +9872,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 59.69 39.6748 0)
 			(effects
 				(font
@@ -10485,6 +10587,76 @@
 			(project "templog_mainboard"
 				(path "/84b25dc3-cc11-42e1-888d-24c6d5a62713"
 					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 181.61 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c11b8f9c-5ec1-4f7d-828a-b70ed09dc3fa")
+		(property "Reference" "R9"
+			(at 184.15 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 184.15 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 182.626 43.434 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 181.61 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 181.61 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "32b58f8f-489d-4e1c-97ca-d826e30b3b58")
+		)
+		(pin "2"
+			(uuid "555d628d-786e-4c17-99d1-a4870022e8b3")
+		)
+		(instances
+			(project "templog_mainboard"
+				(path "/84b25dc3-cc11-42e1-888d-24c6d5a62713"
+					(reference "R9")
 					(unit 1)
 				)
 			)
