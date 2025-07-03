@@ -65,12 +65,7 @@ https://github.com/atomic14/esp32-s3-pinouts
 
 - double check charger and fuel guage schematic reference
 
-- add voltage 5v to 3.3v voltage divider to allow esp32 to detect usb presence and indicate that the device is charging. (unless powerpath selector somehow indicates this)
-I forget what the "charge" pin is for. Maybe that solves the problem?
-
 - validate how ext1 wakeup works on esp32 from deep sleep. Validate internal pullup can be used, and that it's value is 
 good enough for this design (I'm running out of board space for resistors)
-
-- CHGD pin
 
 - make sure button manager kill pin is not connected to an ESP32 glitch pin
