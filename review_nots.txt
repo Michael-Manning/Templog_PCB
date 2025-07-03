@@ -1,0 +1,13 @@
+Board is a battery powered temperature/humidtity logger that graphs temeperatures on an e-ink display
+
+Has charger and fuel gauge (based on battery babysitter in references folder).
+
+Has soft power switch latch IC that disables power path enable on the charger when killed by the 
+MCU or if button is held down long enough. It also re-enables power when pressed again. It sents interrupts
+to MCU for short presses.
+
+ESP32-S3-mini stays in deep sleep, but is woken up by RTC once per minute via alarm interrupt to take temperature readings.
+
+Readings stored in EEPROM IC.
+
+E-ink driver analog circuit is based on datasheet example and waveshare driver boards (see references folder).

@@ -2999,6 +2999,36 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Voltage regulator\n"
+		(exclude_from_sim no)
+		(at 199.898 90.424 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+		)
+		(uuid "3addbc66-b02f-4856-accf-d4ef4e1f746e")
+	)
+	(text "Charger/Power path selector"
+		(exclude_from_sim no)
+		(at 109.728 119.634 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+		)
+		(uuid "bf279e63-4053-47e0-94af-69e675ee29b2")
+	)
+	(text "Fuel gauge"
+		(exclude_from_sim no)
+		(at 126.746 22.098 0)
+		(effects
+			(font
+				(size 1.778 1.778)
+			)
+		)
+		(uuid "ce64d1a4-ed9c-4bbf-8b05-cb0ded884e3b")
+	)
 	(junction
 		(at 54.61 93.98)
 		(diameter 0)
@@ -3174,6 +3204,16 @@
 			(type default)
 		)
 		(uuid "01b1d3da-7de3-4fef-8871-a89593ab2f76")
+	)
+	(wire
+		(pts
+			(xy 205.74 53.34) (xy 219.71 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "021ee14b-46d3-4000-87be-f92fd1e26408")
 	)
 	(wire
 		(pts
@@ -3404,16 +3444,6 @@
 			(type default)
 		)
 		(uuid "25af0b19-7e43-44a3-b01a-d46871eec626")
-	)
-	(wire
-		(pts
-			(xy 214.63 53.34) (xy 218.44 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "25d457ab-3453-4ceb-b087-2f90bcd896a4")
 	)
 	(wire
 		(pts
@@ -3817,6 +3847,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 50.8) (xy 210.82 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "832069d7-97a9-495d-8b73-b1b1f49ad2da")
+	)
+	(wire
+		(pts
 			(xy 200.66 105.41) (xy 207.01 105.41)
 		)
 		(stroke
@@ -3904,16 +3944,6 @@
 			(type default)
 		)
 		(uuid "92bda5ee-8e81-4560-9ab2-770802bd7128")
-	)
-	(wire
-		(pts
-			(xy 214.63 55.88) (xy 218.44 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9328da20-8916-4e5d-b845-6e42237fe02a")
 	)
 	(wire
 		(pts
@@ -4516,7 +4546,7 @@
 		(uuid "5fd2e048-4d36-409f-9464-d507b0545902")
 	)
 	(label "battery_in"
-		(at 218.44 53.34 0)
+		(at 219.71 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5235,7 +5265,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 209.55 55.88 180)
+		(at 200.66 53.34 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5244,7 +5274,7 @@
 		(fields_autoplaced yes)
 		(uuid "272ede7f-8ac8-43ae-9f52-27f31b05391c")
 		(property "Reference" "J3"
-			(at 209.55 46.99 0)
+			(at 200.66 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5252,7 +5282,7 @@
 			)
 		)
 		(property "Value" "battery_con"
-			(at 209.55 49.53 0)
+			(at 200.66 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5260,7 +5290,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-K_1x02_P2.00mm_Horizontal"
-			(at 209.55 55.88 0)
+			(at 200.66 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5269,7 +5299,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 209.55 55.88 0)
+			(at 200.66 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5278,7 +5308,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 209.55 55.88 0)
+			(at 200.66 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6050,7 +6080,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 218.44 55.88 90)
+		(at 210.82 50.8 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6059,7 +6089,7 @@
 		(fields_autoplaced yes)
 		(uuid "5956f120-8d38-44da-a67f-bf0387034bd9")
 		(property "Reference" "#PWR018"
-			(at 224.79 55.88 0)
+			(at 217.17 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6068,7 +6098,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 222.25 55.8799 90)
+			(at 214.63 50.7999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6077,7 +6107,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 218.44 55.88 0)
+			(at 210.82 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6086,7 +6116,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 218.44 55.88 0)
+			(at 210.82 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6095,7 +6125,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 218.44 55.88 0)
+			(at 210.82 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)

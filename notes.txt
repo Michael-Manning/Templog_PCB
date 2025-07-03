@@ -1,4 +1,4 @@
-Parts -------------
+------------- Parts -------------
 
 sensor:
 SHT45
@@ -7,7 +7,7 @@ controller:
 ESP32-S3-MINI-1
 
 eeprom:
-M24512-WMN6TP
+24LC512
 
 fuel guage:
 BQ27441
@@ -31,8 +31,23 @@ TLV75533PDBVR
 
 connector
 FPC-05F-24PH20
--------------------
 
+------------- I2C Addresses -------------
+7 bit representation / 8 bit representation
+
+DS3231MZ:
+0x68 / 0xD0
+
+SHT45-A (letter determines address)
+0x44
+
+BQ27441
+0x55
+
+24LC512 (last three bits are determined by A0, A1, A3 pins. Set all to ground for 000)
+0x50
+
+------------ References --------------
 
 power inductor maybe?
 L_Sunlord_SWPA4030S
@@ -43,27 +58,19 @@ https://cdn.sparkfun.com/assets/learn_tutorials/5/3/0/sparkfun-battery-babysitte
 esp32 raw e-ink driver example PCB:
 https://www.waveshare.com/wiki/E-Paper_ESP32_Driver_Board
 
-todo:
+pinouts:
+https://github.com/atomic14/esp32-s3-pinouts
 
-- verify battery connector polarity
+ -------------------- todo ---------------
 
 - double check charger and fuel guage schematic reference
-
-- ensure all i2c addresses are unique
-
-- add touch points to break out boot/reset for esp32
-
 
 - add voltage 5v to 3.3v voltage divider to allow esp32 to detect usb presence and indicate that the device is charging. (unless powerpath selector somehow indicates this)
 I forget what the "charge" pin is for. Maybe that solves the problem?
 
-- determine which pins can be used to wake up esp32 from deep sleep. If using soft power switch IC, and if if interupt pulls low, verify that the esp32 can be woken up
-from a pin being pulled low, not high
+- validate how ext1 wakeup works on esp32 from deep sleep. Validate internal pullup can be used, and that it's value is 
+good enough for this design (I'm running out of board space for resistors)
 
-- might be worth searching a bit longer for an even better voltage regulator. Ideally one that has a higher current rating, better efficiency, but not in a BGA package
+- CHGD pin
 
-- determine if button manager interrupt pin high voltage is above 3.3v
-
-ribbon cable connector must be placed in a specific spot determined by where the cable is attacted to the display and how the cable is shapped (it has an offset position at the end from where it is attatched to the display)
-
-
+- make sure button manager kill pin is not connected to an ESP32 glitch pin
