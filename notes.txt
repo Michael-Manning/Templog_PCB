@@ -69,6 +69,8 @@ https://github.com/atomic14/esp32-s3-pinouts
 
 - check if TVS diode is backwards
 
+- Check soft power switch time capacitor again. Maybe it should be a larger package just in case?
+
 - double check charger and fuel guage schematic reference
 
 validate pin chosen for alarm gpio
