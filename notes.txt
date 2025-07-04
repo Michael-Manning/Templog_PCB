@@ -63,6 +63,12 @@ https://github.com/atomic14/esp32-s3-pinouts
 
  -------------------- todo ---------------
 
+- check if I accidentally made the temp sensor cutout smaller
+
+- ask if 1uf/50v 0402 caps are a bad idea
+
+- check if TVS diode is backwards
+
 - double check charger and fuel guage schematic reference
 
 validate pin chosen for alarm gpio
