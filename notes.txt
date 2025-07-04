@@ -63,10 +63,6 @@ https://github.com/atomic14/esp32-s3-pinouts
 
  -------------------- todo ---------------
 
-- check if I accidentally made the temp sensor cutout smaller
-
-- ask if 1uf/50v 0402 caps are a bad idea
-
 - check if TVS diode is backwards
 
 - Check soft power switch time capacitor again. Maybe it should be a larger package just in case?
@@ -74,9 +70,6 @@ https://github.com/atomic14/esp32-s3-pinouts
 - double check charger and fuel guage schematic reference
 
 validate pin chosen for alarm gpio
-
-SPI lines could use lower pins and free up space near the diodes.
-If I free up that space, switch 10uf capacitor to a larger package
 
 add voltage specifiers where needed on the display driver and regulator analog circuits
 
